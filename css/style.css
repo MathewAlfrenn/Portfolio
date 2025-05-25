@@ -127,10 +127,18 @@ body.light-theme {
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(0, 255, 200, 0.15), transparent 70%);
+    background: radial-gradient(circle, rgba(15, 207, 165, 0.15), transparent 70%);
     filter: blur(80px);
     z-index: 0;
+    border-radius: 50%;
   }
+  
+  /* Light theme override */
+  body.light-theme .hero-glow::before {
+    background: radial-gradient(circle, rgba(80, 180, 255, 0.3), transparent 70%);
+  }
+  
+  
   
   /* Default (dark mode) */
 .social-icons a {
